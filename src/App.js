@@ -19,31 +19,24 @@ import Idcard from './pages/IDcard';
 
 function App() {
   return (
-    <>
-    
+    <div className="container">
 
-      <div className="container">
-    
-        <ToastContainer position="top-center" />
-        <Routes>
+      <ToastContainer position="top-center" />
+      <Routes>
         <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Memberform" element={<Memberform />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Committee" element={<Committee />} />
-          <Route path="/Member" element={<Member />} />
-          <Route path="/Aboutus" element={<Aboutus/>}/>
-          <Route path="/update/:id" element={<Memberform />} />
-          <Route path="/view/:id" element={<View />} />
-          <Route path="/api/get/:id" element={<Idcard />} />
-          <Route path="/Idcard" element={<Idcard/>}/>
-        
-          
-        </Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Memberform" element={<Memberform />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Committee" element={<Committee />} />
+        <Route path="/Member" element={<Member />} />
+        <Route path="/Aboutus" element={<Aboutus />} />
+        <Route path="/update/:id" element={<Memberform />} />
+        <Route path="/view/:id" element={<View />} />
+        <Route path="/api/get/:id" element={<Idcard />} />
+        <Route path="/Idcard" element={<Idcard />} />
+      </Routes>
 
-      </div>
-
-    </>
+    </div>
   );
 }
 export default App;
